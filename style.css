@@ -1,0 +1,464 @@
+/* BODY Properties */
+body {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+/* CONTAINER Properties */
+.container {
+    width: 100%;
+    height: auto;
+}
+/* Format HEADER section and text */
+.header-1 {
+    background-color: #052962 ;
+    padding: 1%;
+    margin-bottom: 1%;
+    width: 98%;
+}
+.header-section-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 0;
+    justify-content: space-evenly;
+}
+.header-2 {
+    display: none;
+}
+.header-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    color:white;
+    margin: 1%;
+}
+.header-text-1 {
+    font-size: 250%;
+    width: 75%;
+}
+.header-text-2 {
+    font-size: 200%;
+    width: fit-content;
+/*    text-align: right; */
+}
+.header-text-3 {
+    font-size: 400%;
+}
+
+/* SIDE HEADER properties is common for all sections */
+.side-header {
+    width: 30%;
+    margin-right: 2%;
+}
+
+/* GRID SECTION LAYPUT */
+
+/* INTRODUCTION Layout */
+.intro-container {
+    display: flex;
+    flex-direction: row;
+}
+.intro-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    grid-column-gap: 2%;
+    grid-row-gap: 4%;
+    width: 95%;
+    height: auto;
+    padding-bottom: 1%;
+}
+.intro-1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.intro-2 {
+    grid-area: 1 / 2 / 3 / 4;
+    width:fit-content;
+}
+.intro-3 {
+    grid-area: 1 / 4 / 3 / 5;
+}
+.intro-4 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+/* ABOUT Layout */
+.about-container {
+    display: flex;
+    flex-direction: row;
+}
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 2%;
+    grid-row-gap: 4%;
+    width: 95%;
+    height: auto;
+    padding-top: 1%;
+    padding-bottom: 0;
+}
+.about-1 {
+    grid-area: 1 / 1 / 4 / 3;
+}
+.about-2 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+.about-3 {
+    grid-area: 1 / 4 / 2 / 5;
+}
+.about-4 {
+    grid-area: 2 / 3 / 4 / 4;
+}
+.about-5 {
+    grid-area: 2 / 4 / 4 / 5;
+}
+
+/* RESUME Layout */
+.resume-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1%;
+}
+.resume-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.9fr 1fr 1fr 1.75fr;
+    grid-column-gap: 2%;
+    grid-row-gap: 4%;
+    width: 95%;
+    height: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.resume-1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.resume-2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+.resume-3 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+.resume-4 {
+    grid-area: 1 / 4 / 2 / 5;
+}
+.resume-5 {
+    grid-area: 2 / 1 / 5 / 3;
+}
+.resume-6 {
+    grid-area: 2 / 3 / 5 / 5;
+}
+
+
+/* SHOWCASDE Layout */
+.showcase-container {
+    display: flex;
+    flex-direction: row;
+}
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 0.75fr 0.75fr 0.75fr 0.75fr 0.75fr 0.75fr;
+    grid-column-gap: 2%;
+    grid-row-gap: 4%;
+    width: 95%;
+    height: auto;
+    padding-top: 1%;
+    padding-bottom: 5%;
+}
+.showcase-1 {
+    grid-area: 1 / 1 / 2 / 5;
+}
+.showcase-2 {
+    grid-area: 2 / 1 / 4 / 3;
+}
+.showcase-3 {
+    grid-area: 2 / 3 / 4 / 5;
+}
+.showcase-4 {
+    grid-area: 4 / 1 / 6 / 3;
+}
+.showcase-5 {
+    grid-area: 4 / 3 / 6 / 5;
+}
+.showcase-6 {
+    grid-area: 6 / 1 / 8 / 3;
+}
+.showcase-7 {
+    grid-area: 6 / 3 / 8 / 5;
+}
+
+/* CONTACT Layout */
+.contact-container {
+    display: flex;
+    flex-direction: row;
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2%;
+    grid-row-gap: 4%;
+    width: 95%;
+    height: auto;
+    padding-top: 1%;
+    padding-bottom: 5%;
+}
+.contact-1 {
+    grid-area: 1 / 1 / 3 / 3;
+}
+.contact-2 {
+    grid-area: 1 / 3 / 3 / 5;
+}
+
+/* Format SECTIONS */
+body {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.grid-container {
+    border-top: solid; border-color: lightgray; border-width: thin;
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+.grid-section {
+    height: fit-content;
+    padding: 5px;
+    padding-bottom: 2px;
+    margin: 0;
+    min-height: 0;
+    border-left: solid; border-color: lightgray; border-width: thin;
+ }
+.grid-contents {
+    padding: 2%;
+    border-top: solid; border-color: lightgray; border-width: thin;
+}
+footer {
+    background-color: #052962 ;
+    padding: 1%;
+    width: 98%;
+    gap: 5%;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+}
+
+/* Format TEXT */
+/* There is NO h1 */
+h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;   
+    font-size: 300%;
+}
+h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 200%;
+    width:100%;
+    margin-top: 0; margin-bottom: 0;
+}
+h3 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%;
+    margin-top: 0; margin-bottom: 5px;
+}
+p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 110%;
+    margin: 0;
+    padding-top: 2%;
+}
+li {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 90%;
+}
+/* Format lists in RESUME section */
+.p-bold {
+    width: 90%;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 4%;
+    padding: 0;
+}
+.stand-out-text {
+    font-weight: bold;
+    color: red;
+}
+
+/* Maximum IMAGE Sizes */
+
+.img-large {
+    width: 95%;
+    height: auto;
+    max-width: 600px;
+    max-height: 280px;
+    margin-top: 0.5%;
+}
+.img-medium {
+    width: 95%;
+    height: auto;
+    max-width: 300px;
+    max-height: 140px;
+    margin-top: 0.5%;
+    padding-right: 4%;
+}
+/*  DEVICE BREAKPOINTS 
+    ( > 1140) Laptop 
+    ( > 976) Large Tablet: Side heading goes to top
+    ( > 756) Small Tablet and Large Smartphone: Increased margin either side. Headings smaller.
+    ( <= 756) Small Smartphone and Standard Mobile: Single Column.
+*/
+
+/* TABLET Large: Side heading goes to top. */
+@media (max-width: 1140px) {
+
+    .header-2 {
+        display: none;
+    }
+    .intro-container {
+        display: flex ;
+        flex-direction: column;
+    }
+    .about-container {
+        display: flex ;
+        flex-direction: column;
+    }
+    .resume-container {
+        display: flex ;
+        flex-direction: column;
+    }
+    .showcase-container {
+        display: flex ;
+        flex-direction: column;
+    }
+    .contact-container {
+        display: flex ;
+        flex-direction: column;
+    }
+    .header-text-1 {
+        font-size: 200%;
+    }
+    .header-text-2 {
+        font-size: 150%;
+        text-align: right;
+    }
+    .header-text-3 {
+        font-size: 300%;
+    }
+}
+
+/* TABLET Small and SMART PHONE Large: Increased margin either side. Headings smaller. */
+@media (min-width: 757px) and (max-width: 976px) {
+
+    .header-2 {
+        display: none;
+    }
+    body {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .header-text-1 {
+        font-size: 175%;
+    }
+    .header-text-2 {
+        font-size: 125%;
+        text-align: right;
+    }
+    .header-text-3 {
+        font-size: 250%;
+    }
+    h2 {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 150%;
+        margin-top: 0; margin-bottom: 0;
+    }
+    h3 {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 125%;
+        margin-top: 0; margin-bottom: 4%;
+    }
+    p {
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 100%;
+    }
+    li {
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 90%;
+    }
+}
+
+/* SMARTPHONE Small and MOBILE Standard: Single Column. */
+
+@media (max-width: 756px) {
+
+    .header-1 {
+        display: none;
+    }
+    .header-2 {
+        display: flex;
+        flex: row;
+        background-color: #052962 ;
+        padding: 1%;
+        margin-bottom: 1%;
+        width: 98%;
+    }
+    .header-text-1 {
+        font-size: 175%;
+    }
+    .header-text-2 {
+        font-size: 125%;
+        text-align: right;
+    }
+    .header-text-3 {
+        font-size: 250%;
+    }
+    img {
+        margin-top: 0;
+    }
+
+    .intro-grid {
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .about-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .resume-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .showcase-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .side-header {
+        width: auto;
+    }
+    h2 {
+        margin-top: 10%;
+    }
+
+    /*  In Mobile Mode, the order if display of the elements can be mixed up.
+    Change the relevant ones */
+    .intro-4 {order: 1;}
+    .intro-2 {order: 2;}
+    .intro-3 {order: 3;}
+
+    .about-4 {order: 1;}
+    .about-3 {order: 2;}
+    .about-5 {order: 3;}
+
+    .resume-5 {order: 1;}
+    .resume-3 {order: 2;}
+    .resume-4 {order: 3;}
+    .resume-6 {order: 4;}
+
+}
